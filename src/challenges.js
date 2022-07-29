@@ -1,6 +1,12 @@
 // Desafio 1
-function compareTrue() {
+function compareTrue(girafa, elefante, macaco) {
   // iniciando o projeto
+  if ((girafa && elefante) === true) {
+    return true;
+  }
+  if ((macaco && elefante) === false) {
+    return false;
+  } return false;
 }
 
 // Desafio 2
