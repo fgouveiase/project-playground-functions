@@ -6,7 +6,8 @@ function compareTrue(girafa, elefante, macaco) {
   }
   if ((macaco && elefante) === false) {
     return false;
-  } return false;
+  }
+  return false;
 }
 
 // Desafio 2
@@ -29,7 +30,7 @@ function concatName(array) {
 // Desafio 5
 function footballPoints(wins, ties) {
   let result = 0;
-  result = (wins * 3) + (ties * 1);
+  result = wins * 3 + ties * 1;
   return result;
 }
 
@@ -46,7 +47,8 @@ function highestCount(array) {
     if (array[i] >= major) {
       count++;
     }
-  } return count;
+  }
+  return count;
 }
 
 // Desafio 7
@@ -56,26 +58,30 @@ function catAndMouse(mouse, cat1, cat2) {
 
   if (distancia1 < distancia2) {
     return 'cat1';
-  } if (distancia1 > distancia2) {
+  }
+  if (distancia1 > distancia2) {
     return 'cat2';
-  } return 'os gatos trombam e o rato foge';
+  }
+  return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8
 function fizzBuzz(numbers) {
   let array = [];
+
   for (let i = 0; i < array.length; i++) {
     if (numbers[i] % 3 === 0 && numbers[i] % 5 === 0) {
       array.push('fizzBuzz');
+    } else if (numbers[i] % 3 === 0 && numbers[i] % 5 != 0) {
+      array.push('fizz');
+    } else if (numbers[i] % 3 != 0 && numbers[i] % 5 === 0) {
+      array.push('buzz');
+    } else {
+      array.push('bug!');
     }
-  } else if (numbers[i] % 3 === 0 && numbers[i] % 5 != 0) {
-    array.push('fizz');
-  } else if (numbers[i] % 3 != 0 && numbers[i] % 5 === 0) {
-    array.push('buzz');
-  } else {
-    array.push('bug!');
-  } return array;
-} 
+  }
+  return array;
+}
 
 // Desafio 9
 function encode() {
