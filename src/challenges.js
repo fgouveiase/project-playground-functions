@@ -72,10 +72,10 @@ function fizzBuzz(numbers) {
     array.push('fizz');
   } else if (numbers[i] % 3 != 0 && numbers[i] % 5 === 0) {
     array.push('buzz');
-  } else (numbers[i] % 3 != 0 && numbers[i] % 5 != 0) {
-    array.push('bug!')
-  }
-}
+  } else {
+    array.push('bug!');
+  } return array;
+} 
 
 // Desafio 9
 function encode() {
